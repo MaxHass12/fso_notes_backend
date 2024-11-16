@@ -1,11 +1,16 @@
-GET http://localhost:3001/
+GET http://localhost:3001/api/notes/foo
 
 
 ###
-POST http://localhost:3001/api/notes
+POST http://localhost:3001/api/notes/f
 Content-Type: application/json
 
 {
   "content": "foo",
   "important": true
 }
+
+# const corsOptions = {
+#   origin: 'http://localhost:5173',
+#   optionsSuccessStatus: 200,
+# };
