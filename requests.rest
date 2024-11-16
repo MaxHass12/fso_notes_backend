@@ -1,12 +1,35 @@
-GET http://localhost:3001/api/notes/foo
+GET http://localhost:3001/api/notes
 
+###
+GET http://localhost:3001/api/users
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "mluukkai",
+  "password": "salainen"
+}
+
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "mluukkai",
+  "name": "M Salainen",
+  "password": "salainen"
+}
 
 ###
 POST http://localhost:3001/api/notes
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2NzM5MTA3ODZmZWI5YjJmMTk0Y2ZiYjgiLCJpYXQiOjE3MzE3OTcyMjV9.X8E6kq5ODqLAZLVlvm99mUa_Pm7e5LYDW09-ZA4KCeU
 
 {
-  "content": "CSS is important",
+  "content": "The existing test and code need to be changed",
   "important": true
 }
 
