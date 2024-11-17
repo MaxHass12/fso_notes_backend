@@ -40,6 +40,7 @@ notesRouter.post('/', async (request, response, next) => {
     userId = decodedToken.id;
   } catch (err) {
     next(err);
+    return;
   }
 
   const user = await User.findById(userId);
