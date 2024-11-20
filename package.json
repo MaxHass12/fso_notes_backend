@@ -1,9 +1,9 @@
-{
-  "name": "backend",
+{ "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "start:test": "NODE_ENV=test node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf dist && cd ../notes_frontend && npm run build && cp -r dist ../notes_backend",
